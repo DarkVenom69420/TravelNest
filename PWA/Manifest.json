@@ -1,0 +1,16 @@
+{
+  "name": "TravelNest",
+  "short_name": "TravelNest",
+  "start_url": "../Pages/Home.html",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#1f9a66",
+  "icons": [
+    {
+      "src": "../Svgs/Favicon.svg",
+      "sizes": "512x512",
+      "type": "image/svg+xml"
+    }
+  ]
+}
+

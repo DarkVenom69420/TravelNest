@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description"
+    content="TravelNest helps you explore destinations, plan budgets, and manage travel inspiration." />
+  <title>TravelNest | Home</title>
+  <link rel="icon" type="image/svg+xml" href="../Svgs/Favicon.svg" />
+  <link rel="manifest" href="../PWA/Manifest.json" />
+  <link rel="stylesheet" href="../Stylesheets/Global.css" />
+  <link rel="stylesheet" href="../Stylesheets/Home.css" />
+</head>
+<body data-page="home">
+  <div id="site-header"></div>
+  <main id="main-content">
+    <section class="hero-shell">
+      <div class="hero">
+        <div class="hero__text">
+          <p class="tag">Your next journey starts here</p>
+          <h1>Plan better trips with TravelNest</h1>
+          <p id="rotating-quote" class="hero__quote" aria-live="polite"></p>
+          <a class="btn explorer-btn" href="Explorer.html">Start Exploring</a>
+        </div>
+        <div class="hero__media">
+          <a id="hero-image-link" class="hero-image-link" href="Explorer.html">
+            <img id="hero-image" src="" alt="Featured destination" />
+          </a>
+          <p id="hero-image-label"></p>
+        </div>
+      </div>
+    </section>
+    <section class="daily">
+      <h2>Destination of the Day</h2>
+      <article id="destination-of-day" class="daily__card surface-panel"></article>
+    </section>
+  </main>
+  <div id="site-footer"></div>
+  <script src="../Javascripts/Destination Data.js"></script>
+  <script src="../Javascripts/Global.js"></script>
+  <script src="../Javascripts/Home.js"></script>
+</body>
+</html>

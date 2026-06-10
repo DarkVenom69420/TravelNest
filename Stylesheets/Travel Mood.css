@@ -1,0 +1,105 @@
+/*Ambient Sound Controls*/
+.sounds-section {
+  margin-bottom: 2rem;
+}
+
+.sound-controls {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.55rem;
+  margin-top: 0.75rem;
+}
+
+.sound-btn--active {
+  background: var(--accent-dark);
+  color: #fff;
+  box-shadow: inset 0 0 0 2px var(--accent);
+}
+
+/*Track Cards Grid*/
+.track-list {
+  display: grid;
+  gap: 1.2rem;
+  margin-top: 1rem;
+}
+
+/*Fallback for cards with no image*/
+.track-card__img[src*="No Image.svg"] {
+  transform: scale(0.5);
+  transform-origin: center;
+  object-fit: contain;
+}
+
+.status-line {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.3rem;
+  font-weight: 600;
+}
+
+.status-line--visited {
+  color: var(--ok);
+}
+
+.status-line--planned {
+  color: var(--accent);
+}
+
+.status-line--none {
+  color: var(--mutedtext);
+}
+
+.track-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.45rem;
+}
+
+#custom-destination-form {
+  padding: 1.2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.8rem;
+  margin-bottom: 1.5rem;
+}
+
+#custom-destination-form h3 {
+  margin: 0;
+  font-size: 1.25rem;
+}
+
+/*grid for name and image URL inputs*/
+.custom-dest-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0.8rem;
+  width: 100%;
+}
+
+.custom-dest-grid label {
+  margin-bottom: 0;
+}
+
+#custom-destination-form .btn {
+  width: 100%;
+  margin-top: 0.2rem;
+  align-self: center;
+}
+
+.form-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+@media (min-width: 760px) {
+  .track-list {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media (max-width: 580px) {
+  .custom-dest-grid {
+    grid-template-columns: 1fr;
+  }
+}

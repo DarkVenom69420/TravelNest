@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Send feedback and browse support FAQs." />
+  <title>TravelNest | Feedback & Support</title>
+  <link rel="icon" type="image/svg+xml" href="../Svgs/Favicon.svg" />
+  <link rel="manifest" href="../PWA/Manifest.json" />
+  <link rel="stylesheet" href="../Stylesheets/Global.css" />
+  <link rel="stylesheet" href="../Stylesheets/Feedback.css" />
+</head>
+<body data-page="feedback">
+  <div id="site-header"></div>
+  <main id="main-content">
+    <h1>Feedback & Support</h1>
+    <form id="feedback-form" class="surface-panel" novalidate>
+      <label>Name
+        <input id="name" type="text" />
+      </label>
+      <label>Email
+        <input id="email" type="text" />
+      </label>
+      <label>Message
+        <textarea id="message" class="no-resize" rows="5"></textarea>
+      </label>
+      <button class="btn" type="submit">Submit Feedback</button>
+    </form>
+    <p id="feedback-message" aria-live="polite"></p>
+    <section>
+      <h2>FAQs</h2>
+      <div id="faq" class="accordion"></div>
+    </section>
+  </main>
+  <div id="site-footer"></div>
+  <script src="../Javascripts/Global.js"></script>
+  <script src="../Javascripts/Feedback.js"></script>
+</body>
+</html>

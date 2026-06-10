@@ -1,0 +1,20 @@
+.filters {
+  display: grid;
+  gap: 0.8rem;
+  margin-bottom: 1rem;
+}
+
+.destination-grid {
+  display: grid;
+  gap: 1.4rem;
+}
+
+@media (min-width: 760px) {
+  .filters {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .destination-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}

@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Set your travel mood with ambient sounds and track visited/planned destinations." />
+  <title>TravelNest | Travel Mood</title>
+  <link rel="icon" type="image/svg+xml" href="../Svgs/Favicon.svg" />
+  <link rel="manifest" href="../PWA/Manifest.json" />
+  <link rel="stylesheet" href="../Stylesheets/Global.css" />
+  <link rel="stylesheet" href="../Stylesheets/Travel Mood.css" />
+</head>
+<body data-page="mood">
+  <div id="site-header"></div>
+  <main id="main-content">
+    <h1>Travel Mood</h1>
+    <section class="sounds-section">
+      <h2>Ambient Sounds</h2>
+      <div class="sound-controls">
+        <button type="button" class="btn sound-btn" data-sound="beach">Beach</button>
+        <button type="button" class="btn sound-btn" data-sound="forest">Forest</button>
+        <button type="button" class="btn sound-btn" data-sound="city">City</button>
+        <button type="button" class="btn sound-btn" data-sound="rain">Rain</button>
+        <button type="button" class="btn ambient-none-btn" id="ambient-none-btn">None</button>
+      </div>
+      <p id="sound-status" aria-live="polite"></p>
+    </section>
+    <section>
+      <h2>Mark destinations</h2>
+      <form id="custom-destination-form" class="surface-panel">
+        <h3>Add a custom destination</h3>
+        <div class="custom-dest-grid">
+          <label>Destination name
+            <input id="custom-name" type="text" required />
+          </label>
+          <label>Image URL
+            <input id="custom-image" type="text" placeholder="Optional" />
+          </label>
+        </div>
+        <button class="btn" type="submit">Add Custom Card</button>
+      </form>
+      <div id="track-list" class="track-list"></div>
+    </section>
+  </main>
+  <div id="edit-custom-modal" class="modal" aria-hidden="true">
+    <div class="modal__content glass-effect">
+      <button type="button" id="close-edit-modal" class="modal__close" aria-label="Close edit form">&times;</button>
+      <h2>Edit custom destination</h2>
+      <form id="edit-custom-form">
+        <input type="hidden" id="edit-custom-id" />
+        <label>Destination name <input id="edit-custom-name" type="text" required /></label>
+        <label>Image URL <input id="edit-custom-image" type="text" placeholder="Optional" /></label>
+        <div class="form-row">
+          <button class="btn" type="submit">Save</button>
+          <button class="btn" type="button" id="cancel-edit-custom">Cancel</button>
+        </div>
+      </form>
+    </div>
+  </div>
+  <div id="site-footer"></div>
+  <script src="../Javascripts/Destination Data.js"></script>
+  <script src="../Javascripts/Global.js"></script>
+  <script src="../Javascripts/Travel Mood.js"></script>
+</body>
+
+</html>
